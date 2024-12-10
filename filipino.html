@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filipino Recipes</title>
+  <style>
+    /* General styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      color: white;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Header styles */
+    header {
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    /* Navbar styles */
+    .navbar ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+
+    .navbar ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    .navbar ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    .navbar ul li a:hover {
+      color: #ff6347;
+    }
+
+    /* Recipe section styles */
+    .recipe-list {
+      margin: 40px 0;
+      text-align: center;
+    }
+
+    .recipe-list h3 {
+      font-size: 2.5em;
+      margin-bottom: 30px;
+    }
+
+    .recipe {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      margin-bottom: 30px;
+    }
+
+    .recipe h4 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    .recipe-image {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .recipe ul {
+      list-style-type: none;
+      margin: 20px 0;
+      padding: 0;
+    }
+
+    .recipe ul li {
+      margin-bottom: 10px;
+    }
+
+    .recipe ol {
+      list-style-type: decimal;
+      margin: 20px 0;
+      padding: 0;
+    }
+
+    /* Footer styles */
+    footer {
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+
+    footer p {
+      font-size: 1em;
+      color: white;
+    }
+
+    /* Responsive Styles */
+    @media screen and (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      .recipe-list h3 {
+        font-size: 2em;
+      }
+
+      .recipe h4 {
+        font-size: 1.8em;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      header h1 {
+        font-size: 1.6em;
+      }
+
+      .recipe-list h3 {
+        font-size: 1.8em;
+      }
+
+      .recipe h4 {
+        font-size: 1.6em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Filipino Recipes</h1>
+      <nav class="navbar">
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="Category.html">Categories</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+          <li><a href="ContactUs.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="recipe-list">
+      <h3>Popular Filipino Dishes</h3>
+
+      <!-- Recipe 1: Adobo -->
+      <div class="recipe">
+        <h4>Adobo</h4>
+        <img src="adobo.jpg" alt="Adobo" class="recipe-image">
+        <p><strong>Description:</strong> A savory dish made with pork or chicken marinated in soy sauce, vinegar, garlic, and spices, then simmered until tender.</p>
+        <h5>Ingredients:</h5>
+        <ul>
+          <li>1 kg pork or chicken (cut into pieces)</li>
+          <li>1/4 cup soy sauce</li>
+          <li>1/4 cup vinegar</li>
+          <li>4 cloves garlic (minced)</li>
+          <li>1 onion (sliced)</li>
+          <li>1 bay leaf</li>
+          <li>1 tsp peppercorns</li>
+          <li>Salt to taste</li>
+        </ul>
+        <h5>Preparation Steps:</h5>
+        <ol>
+          <li>Marinate the meat in soy sauce, vinegar, garlic, and peppercorns for at least 30 minutes.</li>
+          <li>Simmer the mixture in a pot over medium heat for 45 minutes, or until the meat is tender.</li>
+          <li>Add bay leaf and adjust seasoning to taste.</li>
+          <li>Serve with steamed rice.</li>
+        </ol>
+      </div>
+
+      <!-- Recipe 2: Sinigang na Baboy -->
+      <div class="recipe">
+        <h4>Sinigang na Baboy</h4>
+        <img src="sinigang.avif" alt="Sinigang na Baboy" class="recipe-image">
+        <p><strong>Description:</strong> A tangy tamarind-based soup with pork, vegetables, and a variety of spices.</p>
+        <h5>Ingredients:</h5>
+        <ul>
+          <li>1 kg pork belly (cut into pieces)</li>
+          <li>1 onion (quartered)</li>
+          <li>2 tomatoes (quartered)</li>
+          <li>1 pack sinigang mix (or fresh tamarind)</li>
+          <li>2 long green chili peppers</li>
+          <li>1 eggplant (sliced)</li>
+          <li>1 bunch kangkong (water spinach)</li>
+          <li>2 okra (sliced)</li>
+          <li>1 radish (sliced)</li>
+          <li>Salt to taste</li>
+        </ul>
+        <h5>Preparation Steps:</h5>
+        <ol>
+          <li>Boil pork with onions and tomatoes until tender.</li>
+          <li>Add sinigang mix (or tamarind) and simmer for another 10 minutes.</li>
+          <li>Add vegetables and cook for another 5 minutes until tender.</li>
+          <li>Season with salt and serve hot.</li>
+        </ol>
+      </div>
+
+      <!-- Recipe 3: Pancit Canton -->
+      <div class="recipe">
+        <h4>Pancit Canton</h4>
+        <img src="pancitcanton.jpeg" alt="Pancit Canton" class="recipe-image">
+        <p><strong>Description:</strong> A stir-fried noodle dish made with vegetables, meat, and a savory sauce.</p>
+        <h5>Ingredients:</h5>
+        <ul>
+          <li>200g pancit canton noodles</li>
+          <li>1/2 lb chicken breast (shredded)</li>
+          <li>1/2 lb pork (sliced thinly)</li>
+          <li>2 carrots (julienned)</li>
+          <li>1 onion (sliced)</li>
+          <li>1/2 cup soy sauce</li>
+          <li>1/4 cup oyster sauce</li>
+          <li>2 cups chicken broth</li>
+          <li>1/2 cup snow peas</li>
+          <li>1/2 cup bell pepper (sliced)</li>
+          <li>2 tbsp oil</li>
+        </ul>
+        <h5>Preparation Steps:</h5>
+        <ol>
+          <li>Cook pancit canton noodles according to package instructions.</li>
+          <li>Stir-fry pork and chicken in oil until cooked through.</li>
+          <li>Add vegetables, soy sauce, oyster sauce, and chicken broth. Simmer for 5 minutes.</li>
+          <li>Add noodles and stir-fry until well mixed and heated through.</li>
+          <li>Serve hot with a squeeze of calamansi (Philippine lime).</li>
+        </ol>
+      </div>
+
+      <!-- Recipe 4: Lechon Kawali -->
+      <div class="recipe">
+        <h4>Lechon Kawali</h4>
+        <img src="lechonkawali.jpg" alt="Lechon Kawali" class="recipe-image">
+        <p><strong>Description:</strong> Deep-fried crispy pork belly served with a dipping sauce of vinegar and soy sauce.</p>
+        <h5>Ingredients:</h5>
+        <ul>
+          <li>1 kg pork belly (cut into chunks)</li>
+          <li>1 onion (quartered)</li>
+          <li>1 head garlic (crushed)</li>
+          <li>2 bay leaves</li>
+          <li>Salt and pepper to taste</li>
+          <li>Vegetable oil for frying</li>
+        </ul>
+        <h5>Preparation Steps:</h5>
+        <ol>
+          <li>Boil pork belly with onions, garlic, bay leaves, salt, and pepper until tender.</li>
+          <li>Drain and allow the pork to cool before deep-frying in hot oil until crispy.</li>
+          <li>Serve with a dipping sauce of vinegar, soy sauce, and crushed peppercorns.</li>
+        </ol>
+      </div>
+
+      <!-- Recipe 5: Halo-Halo -->
+      <div class="recipe">
+        <h4>Halo-Halo</h4>
+        <img src="halohalo.jpg" alt="Halo-Halo" class="recipe-image">
+        <p><strong>Description:</strong> A famous Filipino dessert made with a mixture of crushed ice, fruits, jellies, and leche flan.</p>
+        <h5>Ingredients:</h5>
+        <ul>
+          <li>Shaved ice</li>
+          <li>Sweetened beans (red mung beans, garbanzo beans)</li>
+          <li>Sweetened banana (saba)</li>
+          <li>Leche flan</li>
+          <li>Ube halaya (purple yam jam)</li>
+          <li>Jelly (nata de coco or coconut gel)</li>
+          <li>Evaporated milk</li>
+          <li>Sugar (optional)</li>
+        </ul>
+        <h5>Preparation Steps:</h5>
+        <ol>
+          <li>Layer the ingredients in a tall glass: start with the sweetened beans, banana, leche flan, ube, and jelly.</li>
+          <li>Add a scoop of shaved ice on top.</li>
+          <li>Drizzle with evaporated milk and sprinkle sugar to taste.</li>
+          <li>Mix well before eating for a refreshing treat!</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Recipe Sharing Website. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

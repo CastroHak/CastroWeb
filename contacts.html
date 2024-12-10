@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="main.css">
+  <script>
+    function validateForm() {
+      const firstName = document.getElementById('firstName').value;
+      const lastName = document.getElementById('lastName').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      if (!firstName || !lastName || !email || !message) {
+        alert("Please fill in all fields.");
+        return false;
+      }
+      alert("Thank you for your message!");
+      return true;
+    }
+  </script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Contact Us</h1>
+      <nav class="navbar">
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="Category.html">Categories</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+          <li><a href="ContactUs.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="contact-form">
+      <h3>Get in Touch</h3>
+      <form onsubmit="return validateForm();">
+        <input type="text" id="firstName" placeholder="First Name" required>
+        <input type="text" id="lastName" placeholder="Last Name" required>
+        <input type="email" id="email" placeholder="Email Address" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Recipe Sharing Website. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
