@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Sharing Website</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<style>
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Sidebar Navigation Styles */
+.navbar {
+  background-color: #2c3e50; /* Dark blue background */
+  color: #ecf0f1; /* Light text color */
+  width: 250px;
+  height: 100%; /* Full height of the viewport */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+.navbar ul li {
+  width: 100%;
+}
+
+.navbar ul li a {
+  display: block;
+  text-decoration: none;
+  color: #ecf0f1; /* Light text color */
+  font-size: 1.2em;
+  font-weight: 500;
+  padding: 15px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  background-color: #34495e; /* Slightly lighter blue for hover */
+  color: #e74c3c; /* Red highlight on hover */
+}
+
+.navbar ul li a.active {
+  background-color: #e74c3c; /* Red for the active page */
+  color: white;
+}
+
+/* Main Content Styles */
+main {
+  flex: 1;
+  padding-left: 250px; /* Adjust for sidebar */
+  padding-right: 20px;
+  overflow-y: auto;
+}
+
+.hero {
+  text-align: center;
+  margin: 20px;
+}
+
+.categories {
+  margin: 40px 0;
+}
+
+.category-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.category-item {
+  background-color: #f1c40f;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+}
+
+.category-item a {
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.category-item:hover {
+  background-color: #f39c12;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .navbar {
+    width: 200px;
+  }
+
+  .navbar ul li a {
+    font-size: 1em;
+    padding: 10px 15px;
+  }
+
+  main {
+    padding-left: 200px; /* Adjust for smaller sidebar */
+  }
+
+  .category-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    width: 180px;
+  }
+
+  .navbar ul li a {
+    font-size: 0.9em;
+    padding: 8px 10px;
+  }
+
+  main {
+    padding-left: 180px; /* Adjust for even smaller sidebar */
+  }
+
+  .category-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Footer Styles */
+footer {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  font-size: 1em;
+  margin: 0;
+}
+
+</style>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="Home.html" class="active">Home</a></li>
+      <li><a href="Category.html">Categories</a></li>
+      <li><a href="Gallery.html">Gallery</a></li>
+      <li><a href="ContactUs.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  <!-- Main Content -->
+  <main>
+    <section class="hero">
+      <h2>Welcome to the Recipe Sharing Community!</h2>
+      <p>Explore, share, and enjoy a wide range of delicious recipes from around the world.</p>
+    </section>
+
+    <section class="categories">
+  <h3>Recipe Categories</h3>
+  <div class="category-list">
+    <div class="category-item"><a href="filipino.html">Filipino</a></div>
+    <div class="category-item"><a href="japanese.html">Japanese</a></div>
+    <div class="category-item"><a href="indian.html">Indian</a></div>
+    <div class="category-item"><a href="korean.html">Korean</a></div>
+    <div class="category-item"><a href="desserts.html">Desserts</a></div>
+  </div>
+</section>  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Recipe Sharing Website. All Rights Reserved.</p>
+    </div>
+  </footer>
+  </main>
+</body>
+</html>
